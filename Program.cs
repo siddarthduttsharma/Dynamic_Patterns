@@ -21,42 +21,60 @@ class Patterns
         {
             SquareHollowPattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
+
             NumberTrianglePattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             NumberIncreasingPyramidPattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             NumberIncreasingReversePyramidPattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             NumberChangingPyramidPattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             ZeroOneTrianglePattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             PalindromeTrianglePattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             RhombusPattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             DiamondStarPattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             MirrorImageTrianglePattern(n);
-            Console.WriteLine();
+            Console.WriteLine("\n");
+            Console.WriteLine("-------------------------------------------------------");
 
             HollowTrianglePattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             ReverseHollowTrianglePattern(n);
+            Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
+
             HollowDiamondPyramid(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
 
             HollowHourglassPattern(n);
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------");
+
 
             PascalTriangle(n);
         }
@@ -89,7 +107,7 @@ class Patterns
     public static void NumberTrianglePattern(int input)
     {
         int numberCount = 1;
-        for (int i = 1; i <= input; i++) // for printing the rows
+        for (int i = 1; i <= input; i++) 
         {
             for (int j = input; j > i; j--)
             {
@@ -111,7 +129,7 @@ class Patterns
     {
         for (int i = 1; i <= input; i++)
         {
-            int numberCount = 1; // for reseting the count for the new line
+            int numberCount = 1; 
 
             for (int j = 1; j <= i; j++)
             {
@@ -313,9 +331,6 @@ class Patterns
                     Console.Write(" ");
                 }
             }
-
-
-
             Console.WriteLine();
         }
         for (int i = 1; i <= 2 * input - 1; i++)
