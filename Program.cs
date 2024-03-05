@@ -12,22 +12,54 @@ class Patterns
         int n = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine();
 
+        if (n < 3)
+        {
+            Console.WriteLine("Please enter a value greater than equal to 3");
+            return;
+        }
+        else
+        {
+            SquareHollowPattern(n);
+            Console.WriteLine();
+            NumberTrianglePattern(n);
+            Console.WriteLine();
 
-        SquareHollowPattern(n);
-        NumberTrianglePattern(n);
-        NumberIncreasingPyramidPattern(n);
-        NumberIncreasingReversePyramidPattern(n);
-        NumberChangingPyramidPattern(n);
-        ZeroOneTrianglePattern(n);
-        PalindromeTrianglePattern(n);
-        RhombusPattern(n);
-        DiamondStarPattern(n);
-        MirrorImageTrianglePattern(n);
-        HollowTrianglePattern(n);
-        ReverseHollowTrianglePattern(n);
-        HollowDiamondPyramid(n);
-        HollowHourglassPattern(n);
-        PascalTriangle(n);
+            NumberIncreasingPyramidPattern(n);
+            Console.WriteLine();
+
+            NumberIncreasingReversePyramidPattern(n);
+            Console.WriteLine();
+
+            NumberChangingPyramidPattern(n);
+            Console.WriteLine();
+
+            ZeroOneTrianglePattern(n);
+            Console.WriteLine();
+
+            PalindromeTrianglePattern(n);
+            Console.WriteLine();
+
+            RhombusPattern(n);
+            Console.WriteLine();
+
+            DiamondStarPattern(n);
+            Console.WriteLine();
+
+            MirrorImageTrianglePattern(n);
+            Console.WriteLine();
+
+            HollowTrianglePattern(n);
+            Console.WriteLine();
+
+            ReverseHollowTrianglePattern(n);
+            HollowDiamondPyramid(n);
+            Console.WriteLine();
+
+            HollowHourglassPattern(n);
+            Console.WriteLine();
+
+            PascalTriangle(n);
+        }
 
         Console.ReadKey();
 
@@ -427,7 +459,7 @@ class Patterns
             for (int j = 0; j <= i; j++)
             {
                 Console.Write(count + " ");
-               count = count * (i - j) / (j + 1);
+                count = count * (i - j) / (j + 1);
 
 
             }
